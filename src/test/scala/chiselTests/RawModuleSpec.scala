@@ -192,7 +192,7 @@ class RawModuleSpec extends ChiselFlatSpec with Utils with MatchesAndOmits {
     )()
   }
 
-  "RawModule with afterModuleBuilt" should "be able to instantiated the surrounding module" in {
+  "RawModule with afterModuleBuilt" should "be able to instantiate the surrounding module" in {
     @instantiable
     class Foo extends RawModule {
       override def desiredName = "Foo"
